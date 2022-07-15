@@ -1,0 +1,197 @@
+html, body {
+    height: unset;
+}
+
+a {
+    text-decoration: underline;
+    color: #f6084f;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #f96a95;
+}
+
+header, section, footer {
+    display: flex;
+}
+
+header {
+    justify-content: space-between;
+}
+
+.items {
+    flex-flow: wrap;
+    justify-content: center;
+}
+
+.item {
+    padding: 1rem;
+    margin: 0 4rem 4rem;
+    display: flex;
+    border: 10px;
+    border-radius: 10%;
+}
+
+.section-title {
+    width: 100%;
+    margin: 8rem 1rem 4rem;
+}
+
+header h1, .logo {
+    margin: 1rem;
+}
+
+.logo {
+    width: 10rem;
+}
+
+.bookmark-replacer a {
+    text-decoration: none;
+    color: #C3073F;
+}
+
+.bookmark-replacer a:hover {
+    color: #C3073F;
+}
+
+.jumbotron {
+    margin: 3rem 5rem 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.jumbotron figure {
+    flex: 0 0 12rem;
+}
+
+.jumbotron p {
+    border: 3px dotted #C3073F;
+    border-radius: 30%;
+    padding: 1rem !important;
+}
+
+.products .section-title {
+    color: #950740;
+}
+
+.product {
+    max-width: 20rem;
+    align-items: center;
+    border-style: double;
+    border-color: #950740;
+}
+
+#bega1 {
+    min-width: 3rem;
+}
+
+#bega2 {
+    min-width: 7rem;
+}
+
+#bega3 {
+    min-width: 10rem;
+}
+
+.staff .section-title {
+    margin-top: 3rem;
+    color: #6F2232;
+}
+
+.member {
+    max-width: 15rem;
+    border-color: #6F2232;
+    border-style: ridge;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.member.bega {
+    max-width: 100%;
+    min-width: 30rem;
+}
+
+footer {
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #6F2232;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+footer ul {
+    flex-basis: 40rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer h5 {
+    margin-left: 1rem;
+}
+
+footer ul li {
+    padding: 0.5rem 0;
+}
+
+@media only screen and (max-width: 700px) {
+    #desktop, .logo {
+        display: none;
+    }
+    #tablet {
+        display: flex;
+    }
+    .bookmark-replacer {
+        float: right;
+        margin: 1rem;
+    }
+    header h1 {
+        margin: 0.5rem;
+    }
+    footer {
+        flex-flow: column;
+        justify-content: center;
+    }
+    footer h5 {
+        padding: 1rem 0;
+        margin: 0;
+    }
+    footer ul {
+        flex-basis: 0;
+        margin: 0 1rem;
+        width: calc(100% - 2rem);
+        justify-content: space-between;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .bookmark-replacer {
+        float: none;
+    }
+    body {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+    .jumbotron {
+        flex-flow: column;
+    }
+    .jumbotron figure {
+        display: flex;
+        flex: 0 0;
+        align-content: flex-end;
+        margin-bottom: 1rem;
+    }
+    .product {
+        padding: 1rem;
+        margin: 0 1rem 4rem;
+    }
+    footer ul {
+        flex-flow: column;
+        align-items: center;
+    }
+}

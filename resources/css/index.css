@@ -1,0 +1,111 @@
+html, body {
+    background-color: #1A1A1D;
+    color: white;
+    height: 100%;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 5rem;
+    font-weight: 700;
+    color: #C3073F;
+}
+
+h2 {
+    font-family: 'Bitter', serif;
+    font-style: italic;
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-family: 'Cormorant SC', serif;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+h5 {
+    font-family: 'Bitter', serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #C3073F;
+}
+
+#tablet {
+    display: none;
+}
+
+#phone {
+    display: none;
+}
+
+.bookmark img {
+    position: absolute;
+    right: 10%;
+    top: -6.25rem;
+    transition: 1s ease-in-out;
+}
+
+.bookmark img:hover {
+    top: 0;
+    transition: 1s ease-in-out;
+}
+
+.bookmark-replacer {
+    border: 1px solid #C3073F;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    width: fit-content;
+}
+
+#desktop {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.banner h2 {
+    padding: 0.5rem 1rem;
+    border: 3px solid #6F2232;
+    border-radius: 2rem;
+}
+
+.banner h2 a {
+    color: gainsboro;
+}
+
+@media only screen and (max-width: 450px) {
+    #desktop {
+        display: none;
+    }
+    #phone {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+    #phone .bookmark-replacer {
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+}
